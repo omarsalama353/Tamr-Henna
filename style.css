@@ -524,7 +524,7 @@ h4,
 .menu {
     position: relative;
     background-color: var(--bg-darker);
-    background-image: url("photos/Untitled\ design\ \(38\).png");
+    background-image: url("IMG_2017.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -942,4 +942,5 @@ footer {
     .reserve-form {
         flex-direction: column;
     }
+
 }
