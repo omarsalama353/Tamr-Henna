@@ -524,6 +524,19 @@ h4,
 .menu {
     position: relative;
     background-color: var(--bg-darker);
+    background-image: url("photos/WhatsApp Image 2026-02-21 at 6.42.43 AM (1).jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 5, 5, 0.85);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .menu .container {
