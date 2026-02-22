@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const langArBtn = document.querySelector('.lang-ar');
     const langAwareElements = document.querySelectorAll('.lang-aware');
 
-    // Check local storage for preference, default to English
-    let currentLang = localStorage.getItem('siteLang') || 'en';
+    // Check local storage for preference, default to Arabic
+    let currentLang = localStorage.getItem('siteLang') || 'ar';
 
     // Function to apply translation
     const setLanguage = (lang) => {
@@ -174,10 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
             categoryDiv.className = 'menu-category reveal-up';
             categoryDiv.id = category.categoryId;
             categoryDiv.style.transitionDelay = `${delay}s`;
-
-            if (category.bgImage) {
-                categoryDiv.style.backgroundImage = `url('${category.bgImage}')`;
-            }
 
             // Create header
             const header = document.createElement('h3');

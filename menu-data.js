@@ -3,7 +3,6 @@ const menuData = [
     categoryId: "hot-drinks",
     categoryNameEn: "Hot Drinks",
     categoryNameAr: "مشروبات ساخنة",
-    bgImage: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     items: [
       { nameEn: "Single Turkish Coffee", nameAr: "قهوة تركي سنجل", price: "25" },
       { nameEn: "Double Turkish Coffee", nameAr: "قهوه تركى دبل", price: "35" },
@@ -57,7 +56,6 @@ const menuData = [
     categoryId: "cold-drinks",
     categoryNameEn: "Cold Drinks",
     categoryNameAr: "مشروبات باردة",
-    bgImage: "photos/cold.png",
     items: [
       { nameEn: "Mango", nameAr: "مانجو", price: "50" },
       { nameEn: "Orange", nameAr: "برتقال ", price: "35" },
@@ -94,7 +92,7 @@ const menuData = [
       { nameEn: "Sunshine", nameAr: "صن شاين ", price: "70" },
       { nameEn: "Florida", nameAr: "فلوريدا", price: "80" },
       { nameEn: "Pina Colada", nameAr: "بينا كولادا", price: "70" },
-      { nameEn: "Level Up Cocktail", nameAr: "كوكتيل level up", price: "70" },
+      { nameEn: "Level Up Cocktail", nameAr: "كوكتيل تمر حنة ", price: "70" },
       { nameEn: "Fruit Cocktail", nameAr: "فروت كوكتيل", price: "60" },
       { nameEn: "Smoothie Mango", nameAr: "سموزي مانجو", price: "45" },
       { nameEn: "Smoothie Strawberry", nameAr: "سموزي فراوله", price: "35" },
@@ -107,7 +105,6 @@ const menuData = [
     categoryId: "soft-drinks",
     categoryNameEn: "Soft Drinks",
     categoryNameAr: "مشروبات غازية",
-    bgImage: "photos/soft.png",
     items: [
       // Example items, add more below!
       { nameEn: "Pepsi", nameAr: "بيبسي", price: "25" },
@@ -127,7 +124,6 @@ const menuData = [
     categoryId: "dessert",
     categoryNameEn: "Dessert",
     categoryNameAr: "حلويات",
-    bgImage: "photos/dessert.webp",
     items: [
       // Example items, add more below!
       { nameEn: "Waffle Nutella", nameAr: "وافل نوتيلا", price: "40" },
@@ -145,7 +141,6 @@ const menuData = [
     categoryId: "hooka",
     categoryNameEn: "Hooka",
     categoryNameAr: "شيشة",
-    bgImage: "photos/hooka.png",
     items: [
       { nameEn: "", nameAr: "", price: "" },
       { nameEn: "", nameAr: "", price: "" },

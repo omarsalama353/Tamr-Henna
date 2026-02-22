@@ -585,20 +585,43 @@ h4,
     scroll-margin-top: 100px;
     padding: 3rem 2.5rem;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    background-color: rgba(5, 5, 5, 0.85);
-    /* Dark overlay */
+    border: 1px solid rgba(207, 170, 113, 0.1);
+    background-color: var(--bg-card);
+    /* Soft dark card background */
+    backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
-    transition: transform 0.4s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.menu-category::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(145deg, rgba(207, 170, 113, 0.4) 0%, rgba(207, 170, 113, 0) 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
 }
 
 .menu-category:hover {
     transform: translateY(-5px);
-    border-color: rgba(207, 170, 113, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.menu-category:hover::before {
+    opacity: 1;
 }
 
 
@@ -829,8 +852,8 @@ footer {
 
 @media (max-width: 768px) {
     .menu-category {
-        background-color: rgba(5, 5, 5, 0.95);
-        background-blend-mode: multiply;
+        background-color: var(--bg-card);
+        padding: 2rem 1.5rem;
     }
 
     .section-pad {
