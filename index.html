@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamr Henna | Premium Coffee Experience</title>
+    <meta name="description"
+        content="Experience the finest artisanal coffee at Tamr Henna. A premium luxury coffee house dedicated to perfection.">
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cairo:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#about" class="nav-link lang-aware" data-en="About" data-ar="من نحن">About</a>
+                <a href="#menu" class="nav-link lang-aware" data-en="Menu" data-ar="القائمة">Menu</a>
+                <a href="#experience" class="nav-link lang-aware" data-en="Experience" data-ar="التجربة">Experience</a>
+                <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-en active">EN</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-ar">ع</span>
+                </button>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <video class="hero-video" id="hero-video" autoplay muted playsinline>
+                <source src="dark-espresso-shot.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content reveal-up">
+                <div class="hero-logo-wrapper">
+                    <img src="photos/tamr henna logo.png" alt="Tamr Henna Main Logo" class="hero-main-logo">
+                </div>
+                <span class="subtitle lang-aware" data-en="Artisanal Roasters" data-ar="كوفي شوب">Coffee Shop
+                </span>
+                <h1 class="hero-title lang-aware" data-en="Tamr Henna" data-ar="تمر حنة">Tamr
+                    Henna
+                </h1>
+                <p class="hero-desc lang-aware"
+                    data-en="Discover a symphony of flavor in every cup, crafted with passion and precision."
+                    data-ar="اكتشف سيمفونية من النكهات في كل كوب، محضرة بشغف ودقة.">Discover a symphony of flavor in
+                    every cup, crafted with passion and precision.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn-primary lang-aware" data-en="Explore Menu"
+                        data-ar="استكشف القائمة">Explore Menu</a>
+                    <a href="#about" class="btn-secondary lang-aware" data-en="Our Story" data-ar="قصتنا">Our Story</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="lang-aware" data-en="Scroll" data-ar="تمرير">Scroll</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-pad" id="about">
+            <video class="about-video" autoplay loop muted playsinline>
+                <source src="coffee-dripping.mp4" type="video/mp4">
+            </video>
+            <div class="about-overlay"></div>
+            <div class="about-content">
+                <div class="about-grid container">
+                    <div class="about-text reveal-left">
+                        <h2 class="section-title lang-aware" data-en="The Art of <br><em>Perfection</em>"
+                            data-ar="حيث يحكي كل رشفة<br><em>حكاية</em>">The Art of <br><em>Perfection</em></h2>
+                        <p class="lang-aware"
+                            data-en="At Tamr Henna, we believe coffee is more than a beverage; it is an experience. Sourced from the world's most exclusive estates, our beans are meticulously roasted to unveil their unique, complex profiles."
+                            data-ar="في قلب المدينة، تمر حنا ليست مجرد كافيه — بل هي ملاذ من النكهات والعطور. نمزج دفء الضيافة العربية بتجربة معاصرة فاخرة.">
+                            Nestled in the heart of the city, Tamr Henna is more than a café — it's a sanctuary of
+                            flavors and aromas. We blend the warmth of Arabic hospitality with a contemporary premium
+                            experience.</p>
+                        <p class="lang-aware"
+                            data-en="Join us in a space where modern luxury meets the timeless tradition of true craftsmanship."
+                            data-ar="من قهوتنا الفاخرة المختارة بعناية إلى خلطات الشيشة الحرفية، كل تفصيل مصمم لرفع حواسك وخلق لحظات تستحق التذكر.">
+                            Join us in a space where modern luxury meets the timeless tradition of true craftsmanship.
+                        </p>
+                        <a href="#experience" class="link-animate lang-aware" data-en="Discover our process"
+                            data-ar="اكتشف عمليتنا">Discover our process</a>
+                    </div>
+                    <div class="about-image reveal-right">
+                        <div class="img-wrapper">
+                            <!-- Using unsplash image due to generator unavailability -->
+                            <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=800&q=80"
+                                alt="Barista pouring latte art" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu section-pad dark-bg" id="menu">
+            <div class="container">
+                <div class="menu-header text-center reveal-up">
+                    <span class="subtitle text-gold lang-aware" data-en="Curated Offerings"
+                        data-ar="عروض مختارة">Curated Offerings</span>
+                    <h2 class="section-title lang-aware" data-en="Exclusive Menu" data-ar="قائمة حصرية">Exclusive Menu
+                    </h2>
+                </div>
+
+                <div class="menu-nav-container reveal-up">
+                    <div class="menu-nav-scroll">
+                        <a href="#hot-drinks" class="category-btn lang-aware" data-en="Hot Drinks"
+                            data-ar="مشروبات ساخنة">Hot Drinks</a>
+                        <a href="#cold-drinks" class="category-btn lang-aware" data-en="Cold Drinks"
+                            data-ar="مشروبات باردة">Cold Drinks</a>
+                        <a href="#soft-drinks" class="category-btn lang-aware" data-en="Soft Drinks"
+                            data-ar="مشروبات غازية">Soft Drinks</a>
+                        <a href="#dessert" class="category-btn lang-aware" data-en="Dessert"
+                            data-ar="حلويات">Dessert</a>
+                        <a href="#hooka" class="category-btn lang-aware" data-en="Hooka" data-ar="شيشة">Hooka</a>
+                    </div>
+                </div>
+
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Menu categories and items will be dynamically injected here from menu-data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Atmosphere -->
+        <section class="experience section-pad" id="experience">
+            <div class="container text-center reveal-up">
+                <span class="subtitle text-gold lang-aware" data-en="Atmosphere" data-ar="الأجواء">Atmosphere</span>
+                <h2 class="section-title lang-aware" data-en="Designed For You" data-ar="مصممة خصيصا من اجلك ">Designed
+                    for
+                    You</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item tilt-effect">
+                        <img src="photos/WhatsApp Image 2026-02-21 at 6.42.42 AM.png" alt="Cafe interior"
+                            loading="lazy">
+                    </div>
+                    <div class="gallery-item tilt-effect" style="margin-top: 40px;">
+                        <img src="photos/WhatsApp Image 2026-02-21 at 6.42.43 AM (1).jpeg" alt="Coffee beans"
+                            loading="lazy">
+                    </div>
+                    <div class="gallery-item tilt-effect">
+                        <img src="photos/WhatsApp Image 2026-02-21 at 6.42.43 AM.jpeg" alt="Latte art" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="photos/tamr henna logo.png" alt="Tamr Henna Logo">
+                </a>
+                <p class="lang-aware" data-en="Created by Eng/Omar Salama." data-ar="
+                تم الانشاءوالتعديل بواسطة المهندس/عمر سلامة<br> للتواصل/01050706078 ">created by Eng/Omar Salama.
+              </p>
+            </div>
+            <div class="footer-links">
+                <h4 class="lang-aware" data-en="Visit Us" data-ar="زورونا">Visit Us</h4>
+                <p class="lang-aware" data-en="123 Luxury Ave.<br>New York, NY 10012"
+                    data-ar="قليوب شارع التلاتيني بجوار المعهد الديني "></p>
+                <p class="lang-aware" data-en="" data-ar="">
+                    </p>
+            </div>
+            <div class="footer-social">
+                <h4 class="lang-aware" data-en="Connect" data-ar="تواصل معنا">Connect</h4>
+                <a href="https://www.instagram.com/tamrhenna2023/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="lang-aware" data-en="&copy; 2026 Tamr Henna. All rights reserved."
+                data-ar="&copy; 2026 مقهى تمر حنة. جميع الحقوق محفوظة.">&copy; 2026 Tamr Henna. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script that holds our easy-to-edit menu data -->
+    <script src="menu-data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
