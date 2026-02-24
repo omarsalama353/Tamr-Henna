@@ -524,7 +524,7 @@ h4,
 .menu {
     position: relative;
     background-color: var(--bg-darker);
-    background-image: url("IMG_2017.jpeg");
+    background-image: url("photos/Untitled\ design\ \(38\).png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -606,6 +606,50 @@ h4,
     overflow: hidden;
     transition: all 0.5s ease;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    /* Ensure category content is above the background */
+}
+
+/* Base style for category background images to ensure responsiveness */
+.menu-category::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    /* Low opacity to keep text readable */
+    z-index: -1;
+    /* Place behind category content */
+    transition: opacity 0.5s ease;
+    border-radius: 12px;
+}
+
+.menu-category:hover::after {
+    opacity: 0.25;
+    /* Slightly brighten the background on hover */
+}
+
+/* Individual Category Backgrounds */
+#hot-drinks::after {
+    background-image: url('photos/bg_hot_drinks_1771949678970.png');
+}
+
+#cold-drinks::after {
+    background-image: url('photos/bg_cold_drinks_1771949858514.png');
+}
+
+#soft-drinks::after {
+    background-image: url('photos/bg_soft_drinks_1771949919439.png');
+}
+
+#dessert::after {
+    background-image: url('photos/bg_dessert_1771950018980.png');
+}
+
+#hooka::after {
+    background-image: url('photos/bg_hooka_1771950136900.png');
 }
 
 .menu-category::before {
@@ -942,5 +986,4 @@ footer {
     .reserve-form {
         flex-direction: column;
     }
-
 }
